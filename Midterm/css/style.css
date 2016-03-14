@@ -1,0 +1,13 @@
+#map {
+	width: 90%;
+	height: 700px;
+	margin: 0 auto;
+	padding: 0;
+	}
+
+p {font-family: georgia, serif; font-size: x-small;}
+
+body
+	{
+	    background-image: url("http://www.archaeology.wiki/wp-content/uploads/2015/08/palenque_museum_glyphs.jpg");
+	}
