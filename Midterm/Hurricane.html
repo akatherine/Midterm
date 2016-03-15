@@ -22,6 +22,7 @@
         "esri/arcgis/utils",
         "esri/dijit/Legend",
         "esri/dijit/Scalebar",
+        "esri/dijit/BasemapToggle",
         "dojo/domReady!"
       ], function(
         parser,
@@ -33,7 +34,8 @@
         urlUtils,
         arcgisUtils,
         Legend,
-        Scalebar
+        Scalebar,
+        BasemapToggle
       ) {
         ready(function(){
 
@@ -67,7 +69,20 @@
 
 
         });
+        /*
+         * Adds a map control to select a basemap. Requires a div with id="BasemapToggle" inside the map div.
+         *
+         * function name: BasemapToggle
+         * module name: "esri/dijit/BasemapToggle"
+         * documentation: https://developers.arcgis.com/javascript/jssamples/widget_toggle.html
+         * example: http://developers.arcgis.com/javascript/samples/widget_toggle/
+         */
 
+        var toggle = new BasemapToggle({
+          map: map,
+          basemap: "hybrid"
+        }, "BasemapToggle");
+        toggle.startup();
 
         });
 
@@ -81,7 +96,11 @@
         <div id="title"></div>
         <div id="subtitle"></div>
       </div>
-      <div id="map" class="roundedCorners shadow" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'"></div>
+      <div id="map" class="roundedCorners shadow" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+        <div id="BasemapToggle"></div>
+      </div>
     </div>
+
+
   </body>
 </html>
