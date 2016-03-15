@@ -66,7 +66,11 @@
             layerInfos: legendLayers
           },"legend");
           legendDijit.startup();
-
+          var toggle = new BasemapToggle({
+            map: map,
+            basemap: "hybrid"
+          }, "BasemapToggle");
+          toggle.startup();
 
         });
         /*
@@ -78,11 +82,7 @@
          * example: http://developers.arcgis.com/javascript/samples/widget_toggle/
          */
 
-        var toggle = new BasemapToggle({
-          map: map,
-          basemap: "hybrid"
-        }, "BasemapToggle");
-        toggle.startup();
+
 
         });
 
