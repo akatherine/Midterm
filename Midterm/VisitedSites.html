@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <!--Let DOCTYPE and <html> above be the first elements in the document.-->
+
+  <!--The <head> tags contain metadata about the page.-->
+  <head>
+
+    <!--Text in the <title> tags will appear in the browser tab/window and in search engine results.-->
+    <title>Maya Sites I've visited</title>
+
+    <!--Optional <style> tags can contain CSS rules for the page's look and feel, e.g., fonts, background,
+        and colors as well as structure e.g., width and position of elements. CSS rules are often written
+        into a .css file and included using a <link> tag instead of using <style>.-->
+    <style>html, body, #map { width: 100%; height: 100%; margin: 0; padding: 0; }</style>
+
+	<font face="Georgia,Times, Garamond">
+
+    <!-- Bootstrap core CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+   <!-- Custom styles for this template -->
+  	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+      <link href="css/starter-template.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <!--The page's main content, including the map <div>, goes between the <body> tags.-->
+  <body>
+
+    <!--Optional <script> tags can contain JavaScript code used to perform logic, manipulate the page,
+        or respond to user input. JavaScript is often written into a .js file and included with a
+        tag like <script src="myfile.js"> instead of actually placing code here. Like <style> tags,
+        <script> tags can also go in the <head>.
+
+        /*
+         * Get GeoJSON data from an external website using jQuery's getJSON function.
+         *
+         * function: getJSON
+         * documentation: http://api.jquery.com/jquery.getjson/
+         */-->
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+           <div class="container">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index2.html">Home</a>
+             </div>
+             <div id="navbar" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                 <li class="active"><a href="MayaSites.html">Maya Archaeological Sites</a></li>
+                 <li><a href="VisitedSites.html">Sites I've Visited</a></li>
+                 <li><a href="Satellite.html">Recent Satellite</a></li>
+               </ul>
+             </div><!--/.nav-collapse -->
+           </div>
+         </nav>
+
+
+
+
+
+<!-- /.container -->
+<div class="container">
+  <div class="starter-template">
+      <div id="map"></div>
+    </div>
+  </div><!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src ="js/VisitedSites.js"> </script>
+
+  </body>
+</html>
