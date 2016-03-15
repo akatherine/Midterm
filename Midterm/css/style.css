@@ -1,9 +1,13 @@
 #map {
 	width: 90%;
-	height: 700px;
+	height: 800px;
 	margin: 0 auto;
 	padding: 0;
 	}
+
+.popupdiv{
+	width:500px
+}
 
 p {font-family: georgia, serif; font-size: x-small;}
 
