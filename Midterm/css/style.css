@@ -5,8 +5,8 @@
 	padding: 0;
 	}
 
-.popupdiv{
-	width:500px
+.leaflet-popup-content {
+width:auto !important;
 }
 
 p {font-family: georgia, serif; font-size: x-small;}
